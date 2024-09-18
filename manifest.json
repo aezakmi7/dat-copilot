@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Create Email Draft Extension",
+    "version": "1.0",
+    "permissions": ["identity", "identity.email", "tabs"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "oauth2": {
+      "client_id": "348935202973-o8sllfgegstd0epa7m46cartm7ot8gt7.apps.googleusercontent.com",
+      "scopes": ["https://www.googleapis.com/auth/gmail.compose"],
+      "host_permissions": ["https://www.googleapis.com/"]
+    }
+  }
+  
